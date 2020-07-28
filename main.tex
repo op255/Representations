@@ -93,12 +93,92 @@ Known representations of $FVB_n$ and why they are bad for us.
 Group $FVB_n$ is linear \cite{BarBelDom}
 \section{New representation}
 
+Consider a free group $F_{2n}=\langle x_1, x_2,\ldots , x_n, y_1, y_2, \ldots , y_n \rangle$. M.~Ivanov and I.~Emelianenkov suggested the mapping $\theta_n:FVB_n \rightarrow Aut(F_{2n})$, which acts on the generators as follows:
+$$\theta_n(\sigma_i):\left\{
+\begin{array}{lcl}
+x_i \rightarrow x_{i+1}y_{i+1},\\
+x_{i+1} \rightarrow x_iy_{i+1}^{-1},\\
+\end{array}
+\right \theta_n(\rho_i):\left\{
+\begin{array}{lcl}
+x_i \rightarrow x_{i+1},\\
+x_{i+1} \rightarrow x_i,\\
+y_i \rightarrow y_{i+1},\\
+y_{i+1} \rightarrow y_i,\\
+\end{array}
+\right$$
 
-Formulas of the representation of Maxim and Ivan
+The main result of this section is the following
 
-Theorem that it is indeed a representation (here we need to prove that all the relations hold, so, this is computational theorem). Need to explain all relations.
+\begin{theorem}
+The mapping $\theta_n:FVB_n \rightarrow Aut(F_{2n})$ as defined above is representation of flat virtual braids which do not preserve the forbidden relations.
+\end{theorem} 
 
-Proposition that the forbidden move does not hold. Calculate tha values on $x_1$ and it is enough.
+\begin{proof}
+To show that $\theta_n$ is representation sufficinatly check that images of generators satisfy the relations (?). Denote by $s_i$ and $r_i$ images of $\sigma_i$ and $\rho_i$ respectively. Agree to understand the composition $sr$ of mappings $s$ and $r$ as sequential action first $s$ then $r$.
+
+It is not hard to see that $s_is_j=s_js_i$, $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$. Indeed, automorphisms $s_i$ and $r_i$ do not act identically only on $x_i, x_{i+1}, y_i, y_{i+1}$. Then for $|i-j|\ge2$  $s_i$ acts identically on  $x_j, x_{j+1}, y_j, y_{j+1}$ and $s_j$ acts identically on  $x_i, x_{i+1}, y_i, y_{i+1}$. Therefore $s_is_j=s_js_i$. Similarly with the equalities $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$.
+
+The calculations below prove that the remaining relations of flat virtual braids' group hold, and thus it is proved that $\theta_n$ -- representation.
+$$s_is_{i+1}s_i:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
+x_{i+1}\rightarrow x_{i+1}\\
+x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
+\end{array} 
+\right
+s_{i+1}s_is_{i+1}:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
+x_{i+1}\rightarrow x_{i+1}\\
+x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
+\end{array} 
+\right$$
+
+$$r_ir_{i+1}r_i:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}\\
+x_{i+1}\rightarrow x_{i+1}\\
+x_{i+2}\rightarrow x_i\\
+y_{i} \rightarrow y_{i+2}\\
+y_{i+1} \rightarrow y_{i+1}\\
+y_{i+2} \rightarrow y_{i}\\
+\end{array} 
+\right
+r_{i+1}r_ir_{i+1}:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}\\
+x_{i+1}\rightarrow x_{i+1}\\
+x_{i+2}\rightarrow x_i\\
+y_{i} \rightarrow y_{i+2}\\
+y_{i+1} \rightarrow y_{i+1}\\
+y_{i+2} \rightarrow y_{i}\\
+\end{array} 
+\right$$
+
+$$r_{i+1}r_is_{i+1}:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}y_{i+2}\\
+x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
+x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
+y_{i} \rightarrow y_{i+1}\\
+y_{i+1} \rightarrow y_{i+2}\\
+y_{i+2} \rightarrow y_{i}\\
+\end{array} 
+\right
+s_ir_{i+1}r_i:\left\{
+\begin{array}{lcl}
+x_i\rightarrow x_{i+2}y_{i+2}\\
+x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
+x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
+y_{i} \rightarrow y_{i+1}\\
+y_{i+1} \rightarrow y_{i+2}\\
+y_{i+2} \rightarrow y_{i}\\
+\end{array} 
+\right$$
+
+Finally $r_is_{i+1}s_i(x_{i+2})=x_iy_{i+1}^{-1}y_{i+2}^{-1}$ but $s_{i+1}s_ir_{i+1}(x_{i+2})=x_iy_{i+2}^{-1}y_{i+1}^{-1}$. Also $r_{i+1}s_is_{i+1}(x_i)=x_{i+2}y_{i+2}y_{i+1}$ but $s_is_{i+1}r_i(x_i)=x_{i+2}y_{i+2}y_i$. Thus $\theta_n$ do not preserve the forbidden relations.    
+\end{proof}
 
 Remark that it solves the problem of V.~Bardakov from \cite{problems}
 \section{What is the kernel}
