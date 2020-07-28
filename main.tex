@@ -34,6 +34,50 @@
 
 \section{Introduction}
 Motivation here: knot theory, flat virtual knots, braids, flat virtual braids, representations of braid groups, question of Bardakov from \cite{problems}
+Everyone comes across knots. For example, everybody knows about shoelace knots, neck tie knots, knots in logos. 
+
+To understand what is the mathematical knot imagine one experiment. Take a long rope, tangle it and glue the ends. This is a mathematical knot. In mathematical term mathematical knot is  a closed curve in the Euclidean space $R^3$. \\
+
+A link is two or more knots which may or may not be entangled.
+
+Two knots/links are called equivalent if one can be deformed into other by wiggling the knot in $R^3$. The knots are allowed to stretch, shrink and twist but not allowed to cross themselves.
+
+One of the basic problems of the knot theory is the problem of determining by two given links equivalent they are or not.\\
+
+Leaning braid helps us to study knots. Braids on $n$ threads are a set of  $n$ threads entangled with each other which connect $n$ points on one straight line with $n$ points on a parallel straight line.(image)
+
+Braids on $n$ strands can be multiplied with each other. The multiplication $\alpha\beta$ of the braid $\alpha$ on $n$ strands with the braid $\beta$ on $n$ strands is the braid $\alpha$ obtained from the braid $\beta$  by adding braid $\beta$ to it from below. (image)
+
+So the set of all braids on $n$ strands with the multiplication operation defined in this way forms a group, which is denoted by the symbol $B_n$ and is called a braid group on $n$ strands.
+
+In mathematical term, a braid group $B_n$ is a group with generators $\sigma _1,\sigma _2,\dots,\sigma _{n-1}$ and defining relations 
+
+\begin{align*}
+\sigma _i\sigma _{i+1}\sigma _i &= \sigma _{i+1}\sigma _i\sigma _{i+1}&&i = 1, 2, \dots. n-2\\
+\sigma _i\sigma _j &= \sigma _j\sigma _i&&|i-j|\geqslant   2\\
+\end{align*}
+
+
+Braids are objects closely related to knots. If $\alpha$ is a braid on $n$ strands, then to connect the first upper point to the first bottom point, the second upper braid point to the second bottom braid point, and so on we get some link $\check  \alpha$ (image).
+
+For every link $K$ exists some braid $\alpha$, where link $K$ and $\check  \alpha$ are equivalent.\\
+
+
+The group of flat virtual braids on $n$ strands is the group $FVB_n$ with generators  $\sigma _1,\sigma _2,\dots,\sigma _{n-1}\rho_1,\rho _2,\dots,\rho _{n-1}$ and defining relations 
+
+\begin{align*}
+\sigma_i^2&=1 && i = 1, 2, \dots,n-1,\\
+\sigma_i\sigma _{i+1}\sigma _i &= \sigma _{i+1}\sigma _i\sigma _{i+1}&& i = 1, 2, \dots. n-2, \\
+\sigma _i\sigma _j &= \sigma _j\sigma _i && |i-j|\geqslant   2,\\
+\rho_i^2&=1 &&i = 1, 2, \dots,n-1, \\
+\rho_i\rho _{i+1}\rho _i &= \rho _{i+1}\rho_i\rho _{i+1} &&i = 1, 2, \dots. n-2,\\
+\rho _i\rho _j &= \rho _j\rho _i && |i-j|\geqslant 2,\\
+\sigma _i\rho _j &= \rho _j\sigma _i &&|i-j|\geqslant   2,\\
+\rho_i\rho _{i+1}\sigma _i &= \sigma _{i+1}\rho_i\rho _{i+1} && i = 1, 2, \dots. n-2.\\
+\end{align*}
+
+Our aim is construct a representation $FVB_n \rightarrow Aut (G)$, where $G$ is some "good" group, for example, a free group.
+
 \section{Preliminaries}
 Definition of $FVB_n$ (or all braid groups smoothly going to flat virtual braids)
 
