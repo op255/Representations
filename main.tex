@@ -240,6 +240,91 @@ It means that $s-r = 0$, because in any other way $(\alpha \gamma)^r \gamma^{s-r
 Here we understood that every element from $H$ can be written as $a^rc^s=(ac)^rc^{s-r}$, then we understood $ac$ fixes $x_1$, and $c^{s-r}$ fixes $x_1$ only when $s=r$, so, we moved to the element $(ac)^r$. After it we looked to all degrees of $(ac)^r$ and realized that it can go to the identical map only when $r=1$. 
 
 Here write all the degrees of $a,b,c$.
+Degrees of a:
+$$
+\theta(a^{3m}) =
+\begin{cases}
+	x_1 \rightarrow x_1 (y_3 y_2 y_1)^{-m}\\
+	x_2 \rightarrow x_2 (y_1 y_3 y_2)^{-m}\\
+	x_3 \rightarrow x_3 (y_3 y_1 y_2)^{2m}\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_2\\
+	y_3 \rightarrow y_3
+\end{cases}
+\theta(a^{3m+1}) =
+\begin{cases}
+	x_1 \rightarrow x_1 y_3^{-1} (y_2 y_3 y_1)^{-m}\\
+	x_2 \rightarrow x_2 y_1^{-1} (y_3 y_1 y_2)^{-m}\\
+	x_3 \rightarrow x_3 y_3 y_1 (y_2 y_3 y_1)^{2m}\\
+	y_1 \rightarrow y_3\\
+	y_2 \rightarrow y_1\\
+	y_3 \rightarrow y_2
+\end{cases} 
+$$ 
+$$
+\theta(a^{3m+2}) =
+\begin{cases}
+	x_1 \rightarrow x_1 y_3^{-1}y_2^{-1} (y_1 y_2 y_3)^{-m}\\
+	x_2 \rightarrow x_2 y_1^{-1}y_3^{-1} (y_2 y_3 y_1)^{-m}\\
+	x_3 \rightarrow x_3 y_3 (y_1 y_2y_3)^{2m+1}\\
+	y_1 \rightarrow y_2\\
+	y_2 \rightarrow y_3\\
+	y_3 \rightarrow y_1
+\end{cases}
+$$
+Degrees of b:
+$$
+\theta(b^{2k}) =
+\begin{cases}
+	x_1 \rightarrow x_1\\
+	x_2 \rightarrow x_2 (y_2 y_3)^{-k}\\
+	x_3 \rightarrow x_3 (y_3 y_2)^k\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_2\\
+	y_3 \rightarrow y_3
+\end{cases} 
+\theta(b^{2k+1}) =
+\begin{cases}
+	x_1 \rightarrow x_1 \\
+	x_2 \rightarrow x_2 y_3^{-1} (y_3 y_2)^{-k}\\
+	x_3 \rightarrow x_3 y_3 (y_2 y_3)^k\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_3\\
+	y_3 \rightarrow y_2
+\end{cases}
+$$
+Degrees of c:
+$$
+\theta(c^{3k}) =
+\begin{cases}
+	x_1 \rightarrow x_1 (y_1 y_2y_3)^{k}\\
+	x_2 \rightarrow x_2 (y_1^{-1} y_3^{-1} y_2^{-1})^{2k}\\
+	x_3 \rightarrow x_3 (y31 y_1 y_2)^{k}\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_2\\
+	y_3 \rightarrow y_3
+\end{cases}
+\theta(c^{3k+1}) =
+\begin{cases}
+	x_1 \rightarrow x_1 y_1 (y_2 y_3 y_1)^{k}\\
+	x_2 \rightarrow x_2 y_1^{-1} y_3^{-1}(y_2^{-1} y_1^{-1} y_3^{-1})^{2k}\\
+	x_3 \rightarrow x_3 y_3 (y_1 y_2 y_3)^k\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_2\\
+	y_3 \rightarrow y_3
+\end{cases} 
+$$
+$$
+\theta(c^{3k+2}) =
+\begin{cases}
+	x_1 \rightarrow x_1 y_1 y_2 (y_3 y_1 y_2)^{k} \\
+	x_2 \rightarrow x_2 y_1^{-1} y_3^{-1} y_2^{-1} y_1^{-1} (y_1^{-1} y_3^{-1} y_2^{-1})^{2k}\\
+	x_3 \rightarrow x_3 y_3 y_1 (y_2 y_3 y_1)^k\\
+	y_1 \rightarrow y_3\\
+	y_2 \rightarrow y_1\\
+	y_3 \rightarrow y_2
+\end{cases}
+$$
 \section{Linear representation}
 Introduce the linear representation we got from our representation by automorphisms.
 
