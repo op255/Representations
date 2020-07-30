@@ -86,7 +86,7 @@ Explanation what is $FVP_n$
 
 Explanation that $FVB_n=FVP_n\rtimes S_n$
 
-Descri[tion of $FVP_3$ from \cite{BarBelDom}
+Description of $FVP_3$ from \cite{BarBelDom}
 
 Known representations of $FVB_n$ and why they are bad for us.
 
@@ -94,19 +94,20 @@ Group $FVB_n$ is linear \cite{BarBelDom}
 \section{New representation}
 
 Consider a free group $F_{2n}=\langle x_1, x_2,\ldots , x_n, y_1, y_2, \ldots , y_n \rangle$. M.~Ivanov and I.~Emelianenkov suggested the mapping $\theta_n:FVB_n \rightarrow Aut(F_{2n})$, which acts on the generators as follows:
-$$\theta_n(\sigma_i):\left\{
-\begin{array}{lcl}
+$$
+\theta_n(\sigma_i):
+\begin{cases}
 x_i \rightarrow x_{i+1}y_{i+1},\\
 x_{i+1} \rightarrow x_iy_{i+1}^{-1},\\
-\end{array}
-\right \theta_n(\rho_i):\left\{
-\begin{array}{lcl}
+\end{cases},\quad
+\theta_n(\rho_i):
+\begin{cases}
 x_i \rightarrow x_{i+1},\\
 x_{i+1} \rightarrow x_i,\\
 y_i \rightarrow y_{i+1},\\
 y_{i+1} \rightarrow y_i,\\
-\end{array}
-\right$$
+\end{cases}
+$$
 
 The main result of this section is the following
 
@@ -120,62 +121,62 @@ To show that $\theta_n$ is representation sufficinatly check that images of gene
 It is not hard to see that $s_is_j=s_js_i$, $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$. Indeed, automorphisms $s_i$ and $r_i$ do not act identically only on $x_i, x_{i+1}, y_i, y_{i+1}$. Then for $|i-j|\ge2$  $s_i$ acts identically on  $x_j, x_{j+1}, y_j, y_{j+1}$ and $s_j$ acts identically on  $x_i, x_{i+1}, y_i, y_{i+1}$. Therefore $s_is_j=s_js_i$. Similarly with the equalities $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$.
 
 The calculations below prove that the remaining relations of flat virtual braids' group hold, and thus it is proved that $\theta_n$ -- representation.
-$$s_is_{i+1}s_i:\left\{
-\begin{array}{lcl}
+$$
+s_is_{i+1}s_i:
+\begin{cases}
 x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
 x_{i+1}\rightarrow x_{i+1}\\
 x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
-\end{array} 
-\right
-s_{i+1}s_is_{i+1}:\left\{
-\begin{array}{lcl}
+\end{cases}, \quad
+s_{i+1}s_is_{i+1}:
+\begin{cases}
 x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
 x_{i+1}\rightarrow x_{i+1}\\
 x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
-\end{array} 
-\right$$
+\end{cases} 
+$$
 
-$$r_ir_{i+1}r_i:\left\{
-\begin{array}{lcl}
+$$
+r_ir_{i+1}r_i:
+\begin{cases}
 x_i\rightarrow x_{i+2}\\
 x_{i+1}\rightarrow x_{i+1}\\
 x_{i+2}\rightarrow x_i\\
 y_{i} \rightarrow y_{i+2}\\
 y_{i+1} \rightarrow y_{i+1}\\
 y_{i+2} \rightarrow y_{i}\\
-\end{array} 
-\right
-r_{i+1}r_ir_{i+1}:\left\{
-\begin{array}{lcl}
+\end{cases} , \quad
+r_{i+1}r_ir_{i+1}:
+\begin{cases}
 x_i\rightarrow x_{i+2}\\
 x_{i+1}\rightarrow x_{i+1}\\
 x_{i+2}\rightarrow x_i\\
 y_{i} \rightarrow y_{i+2}\\
 y_{i+1} \rightarrow y_{i+1}\\
 y_{i+2} \rightarrow y_{i}\\
-\end{array} 
-\right$$
+\end{cases} 
+$$
 
-$$r_{i+1}r_is_{i+1}:\left\{
-\begin{array}{lcl}
+$$
+r_{i+1}r_is_{i+1}:
+\begin{cases}
 x_i\rightarrow x_{i+2}y_{i+2}\\
 x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
 x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
 y_{i} \rightarrow y_{i+1}\\
 y_{i+1} \rightarrow y_{i+2}\\
 y_{i+2} \rightarrow y_{i}\\
-\end{array} 
-\right
-s_ir_{i+1}r_i:\left\{
-\begin{array}{lcl}
+\end{cases}, \quad
+s_ir_{i+1}r_i:
+\begin{cases}
 x_i\rightarrow x_{i+2}y_{i+2}\\
 x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
 x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
 y_{i} \rightarrow y_{i+1}\\
 y_{i+1} \rightarrow y_{i+2}\\
 y_{i+2} \rightarrow y_{i}\\
-\end{array} 
-\right$$
+\end{cases} 
+$$
 
 Finally $r_is_{i+1}s_i(x_{i+2})=x_iy_{i+1}^{-1}y_{i+2}^{-1}$ but $s_{i+1}s_ir_{i+1}(x_{i+2})=x_iy_{i+2}^{-1}y_{i+1}^{-1}$. Also $r_{i+1}s_is_{i+1}(x_i)=x_{i+2}y_{i+2}y_{i+1}$ but $s_is_{i+1}r_i(x_i)=x_{i+2}y_{i+2}y_i$. Thus $\theta_n$ do not preserve the forbidden relations.    
 \end{proof}
@@ -188,7 +189,55 @@ Prove that this element is not trivial (use the discription of $FVP_3$ and expre
 
 Introduce the group $H$
 
-Proposition ${\rm ker}\cap H=1$. Here we understood that every element from $H$ can be written as $a^rc^s=(ac)^rc^{s-r}$, then we understood $ac$ fixes $x_1$, and $c^{s-r}$ fixes $x_1$ only when $s=r$, so, we moved to the element $(ac)^r$. After it we looked to all degrees of $(ac)^r$ and realized that it can go to the identical map only when $r=1$. 
+The mapping $\theta$ acts on $a, b$ and $c$ in the following way:
+$$
+\theta(a) = \alpha : 
+\begin{cases}
+	x_1 \rightarrow x_1 y_3^{-1}\\
+	x_2 \rightarrow x_2 y_1^{-1}\\
+	x_3 \rightarrow x_3 y_3 y_1\\
+	y_1 \rightarrow y_3\\
+	y_2 \rightarrow y_1\\
+	y_3 \rightarrow y_2
+\end{cases},
+\theta(b) = \beta :
+\begin{cases}
+	x_1 \rightarrow x_1\\
+	x_2 \rightarrow x_2 y_3^{-1}\\
+	x_3 \rightarrow x_3 y_3\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_3\\
+	y_3 \rightarrow y_2
+\end{cases},
+\theta(c) = \gamma :
+\begin{cases}
+	x_1 \rightarrow x_1 y_1\\
+	x_2 \rightarrow x_2 y_1^{-1} y_3^{-1}\\
+	x_3 \rightarrow x_3 y_3\\
+	y_1 \rightarrow y_2\\
+	y_2 \rightarrow y_3\\
+	y_3 \rightarrow y_1
+\end{cases}.
+$$
+
+Proposition ${\rm ker}\cap H=1$. 
+
+Proof. An arbitrary element in $\theta(H)$ has the form $\alpha^r \gamma^s = (\alpha \gamma)^r \gamma^{s-r}$ for some $r,s \in \mathbb{Z}$. It is easy to see that
+$$
+(\alpha \gamma)^r :
+\begin{cases}
+	x_1 \rightarrow x_1\\
+	x_2 \rightarrow x_2 (y_1 y_3 y_1)^{-r}\\
+	x_3 \rightarrow x_3 (y_3 y_1 y_2)^r\\
+	y_1 \rightarrow y_1\\
+	y_2 \rightarrow y_2\\
+	y_3 \rightarrow y_3
+\end{cases}.
+$$
+
+It means that $s-r = 0$, because in any other way $(\alpha \gamma)^r \gamma^{s-r} (x_1) \neq x_1$. But if $s-r = 0$, then for any $r \neq 0$ $(\alpha \gamma)^r (x_2) \neq x_2$. So, $r = 0 \Rightarrow s = 0 \Rightarrow \theta(H) \cap \ker \theta = \{id\}$.  
+
+Here we understood that every element from $H$ can be written as $a^rc^s=(ac)^rc^{s-r}$, then we understood $ac$ fixes $x_1$, and $c^{s-r}$ fixes $x_1$ only when $s=r$, so, we moved to the element $(ac)^r$. After it we looked to all degrees of $(ac)^r$ and realized that it can go to the identical map only when $r=1$. 
 
 Here write all the degrees of $a,b,c$.
 \section{Linear representation}
