@@ -66,6 +66,7 @@ For every link $K$ exists some braid $\alpha$, where link $K$ and $\check  \alph
 
 The group of flat virtual braids on $n$ strands is the group $FVB_n$ with generators  $\sigma _1,\sigma _2,\dots,\sigma _{n-1}\rho_1,\rho _2,\dots,\rho _{n-1}$ and defining relations 
 
+\begin{equation}\label{def}
 \begin{align*}
 \sigma_i^2&=1 && i = 1, 2, \dots,n-1,\\
 \sigma_i\sigma _{i+1}\sigma _i &= \sigma _{i+1}\sigma _i\sigma _{i+1}&& i = 1, 2, \dots. n-2, \\
@@ -76,9 +77,9 @@ The group of flat virtual braids on $n$ strands is the group $FVB_n$ with genera
 \sigma _i\rho _j &= \rho _j\sigma _i &&|i-j|\geqslant   2,\\
 \rho_i\rho _{i+1}\sigma _i &= \sigma _{i+1}\rho_i\rho _{i+1} && i = 1, 2, \dots. n-2.\\
 \end{align*}
+\end{equation}
 
-Our aim is construct a representation $FVB_n \rightarrow Aut (G)$, where $G$ is some "good" group, for example, a free group.
-
+Our aim is construct a representation $FVB_n \rightarrow {\rm Aut} (G)$, where $G$ is some "good" group, for example, a free group.
 \section{Preliminaries}
 Definition of $FVB_n$ (or all braid groups smoothly going to flat virtual braids)
 
@@ -93,92 +94,92 @@ Known representations of $FVB_n$ and why they are bad for us.
 Group $FVB_n$ is linear \cite{BarBelDom}
 \section{New representation}
 
-Consider a free group $F_{2n}=\langle x_1, x_2,\ldots , x_n, y_1, y_2, \ldots , y_n \rangle$. M.~Ivanov and I.~Emelianenkov suggested the mapping $\theta_n:FVB_n \rightarrow Aut(F_{2n})$, which acts on the generators as follows:
+Consider a free group $F_{2n}=\langle x_1, x_2,\ldots , x_n, y_1, y_2, \ldots , y_n \rangle$. M.~Ivanov and I.~Emelianenkov suggested the mapping $\theta_n:FVB_n \rightarrow {\rm Aut}(F_{2n})$ which acts on the generators as follows:
 $$
 \theta_n(\sigma_i):
 \begin{cases}
-x_i \rightarrow x_{i+1}y_{i+1},\\
-x_{i+1} \rightarrow x_iy_{i+1}^{-1},\\
-\end{cases},\quad
+x_i \mapsto x_{i+1}y_{i+1}\\
+x_{i+1} \mapsto x_iy_{i+1}^{-1}\\
+\end{cases}\quad
 \theta_n(\rho_i):
 \begin{cases}
-x_i \rightarrow x_{i+1},\\
-x_{i+1} \rightarrow x_i,\\
-y_i \rightarrow y_{i+1},\\
-y_{i+1} \rightarrow y_i,\\
+x_i \mapsto x_{i+1}\\
+x_{i+1} \mapsto x_i\\
+y_i \mapsto y_{i+1}\\
+y_{i+1} \mapsto y_i\\
 \end{cases}
 $$
 
 The main result of this section is the following
 
 \begin{theorem}
-The mapping $\theta_n:FVB_n \rightarrow Aut(F_{2n})$ as defined above is representation of flat virtual braids which do not preserve the forbidden relations.
+The mapping $\theta_n:FVB_n \rightarrow {\rm Aut}(F_{2n})$ as defined above is representation of flat virtual braids which do not preserve the forbidden relations.
 \end{theorem} 
 
 \begin{proof}
-To show that $\theta_n$ is representation sufficinatly check that images of generators satisfy the relations (?). Denote by $s_i$ and $r_i$ images of $\sigma_i$ and $\rho_i$ respectively. Agree to understand the composition $sr$ of mappings $s$ and $r$ as sequential action first $s$ then $r$.
+To show that $\theta_n$ is representation sufficinatly check that images of generators satisfy the relations (\ref{def}). Denote by $s_i$ and $r_i$ images of $\sigma_i$ and $\rho_i$ respectively. Agree to understand the composition $sr$ of mappings $s$ and $r$ as sequential action first $s$ then $r$.
 
 It is not hard to see that $s_is_j=s_js_i$, $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$. Indeed, automorphisms $s_i$ and $r_i$ do not act identically only on $x_i, x_{i+1}, y_i, y_{i+1}$. Then for $|i-j|\ge2$  $s_i$ acts identically on  $x_j, x_{j+1}, y_j, y_{j+1}$ and $s_j$ acts identically on  $x_i, x_{i+1}, y_i, y_{i+1}$. Therefore $s_is_j=s_js_i$. Similarly with the equalities $r_ir_j=r_jr_i$ and $s_ir_j=r_js_i$ for $|i-j|\ge2$.
 
 The calculations below prove that the remaining relations of flat virtual braids' group hold, and thus it is proved that $\theta_n$ -- representation.
-$$
-s_is_{i+1}s_i:
-\begin{cases}
-x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
-x_{i+1}\rightarrow x_{i+1}\\
-x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
-\end{cases}, \quad
-s_{i+1}s_is_{i+1}:
-\begin{cases}
-x_i\rightarrow x_{i+2}y_{i+2}y_{i+1}\\
-x_{i+1}\rightarrow x_{i+1}\\
-x_{i+2}\rightarrow x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
-\end{cases} 
-$$
 
-$$
-r_ir_{i+1}r_i:
+\begin{align*}
+s_is_{i+1}s_ &:
 \begin{cases}
-x_i\rightarrow x_{i+2}\\
-x_{i+1}\rightarrow x_{i+1}\\
-x_{i+2}\rightarrow x_i\\
-y_{i} \rightarrow y_{i+2}\\
-y_{i+1} \rightarrow y_{i+1}\\
-y_{i+2} \rightarrow y_{i}\\
-\end{cases} , \quad
-r_{i+1}r_ir_{i+1}:
+x_i\xrightarrow{s_i} x_{i+1}y_{i+1}\xrightarrow{s_{i+1}} x_{i+2}y_{i+2}y_{i+1}\xrightarrow{s_i}x_{i+2}y_{i+2}y_{i+1}\\
+x_{i+1}\xrightarrow{s_i} x_{i+1}\xrightarrow{s_{i+1}} x_i\xrightarrow{s_{i}} x_{i+1}\\
+x_{i+2}\xrightarrow{s_i} x_{i+2}\xrightarrow{s_{i+1}} x_{i+1}y_{i+2^{-1}}\xrightarrow{s_i} x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
+\end{cases} \\
+s_{i+1}s_is_{i+1} &:
 \begin{cases}
-x_i\rightarrow x_{i+2}\\
-x_{i+1}\rightarrow x_{i+1}\\
-x_{i+2}\rightarrow x_i\\
-y_{i} \rightarrow y_{i+2}\\
-y_{i+1} \rightarrow y_{i+1}\\
-y_{i+2} \rightarrow y_{i}\\
+x_ix\rightarrow{s_{i+1}} x_i\xrightarrow{s_i} x_{i+1}y_{i+1}\xrightarrow{s_{i+1}} x_{i+2}y_{i+2}y_{i+1}\\
+x_{i+1}\xrightarrow{s_{i+1}} x_{i+2}y_{i+2}\xrightarrow{s_i} x_{i+2}y_{i+2}\xrightarrow{s_{i+1}} x_{i+1}\\
+x_{i+2}\xrightarrow{s_{i+1}} x_{i+1}y_{i+2}^{-1}\xrightarrow{s_{i}} x_iy_{i+1}^{-1}y_{i+2}^{-1}\xrightarrow{s_{i+1}} x_iy_{i+1}^{-1}y_{i+2}^{-1}\\
 \end{cases} 
-$$
+\end{align*}
 
-$$
-r_{i+1}r_is_{i+1}:
+The rest is calculated similarly:
+
+\begin{align*}
+r_ir_{i+1}r_i &:
 \begin{cases}
-x_i\rightarrow x_{i+2}y_{i+2}\\
-x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
-x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
-y_{i} \rightarrow y_{i+1}\\
-y_{i+1} \rightarrow y_{i+2}\\
-y_{i+2} \rightarrow y_{i}\\
-\end{cases}, \quad
-s_ir_{i+1}r_i:
+x_i\mapsto x_{i+2}\\
+x_{i+1}\mapsto x_{i+1}\\
+x_{i+2}\mapsto x_i\\
+y_{i} \mapsto y_{i+2}\\
+y_{i+1} \mapsto y_{i+1}\\
+y_{i+2} \mapsto y_{i}\\
+\end{cases} &\qquad
+r_{i+1}r_ir_{i+1} &:
 \begin{cases}
-x_i\rightarrow x_{i+2}y_{i+2}\\
-x_{i+1}\rightarrow x_{i+1}y_{i+2}^{-1}\\
-x_{i+2}\rightarrow x_iy_{i+1}^{-1}\\
-y_{i} \rightarrow y_{i+1}\\
-y_{i+1} \rightarrow y_{i+2}\\
-y_{i+2} \rightarrow y_{i}\\
+x_i\mapsto x_{i+2}\\
+x_{i+1}\mapsto x_{i+1}\\
+x_{i+2}\mapsto x_i\\
+y_{i} \mapsto y_{i+2}\\
+y_{i+1} \mapsto y_{i+1}\\
+y_{i+2} \mapsto y_{i}\\
+\end{cases} \\ 
+r_{i+1}r_is_{i+1} &:
+\begin{cases}
+x_i\mapsto x_{i+2}y_{i+2}\\
+x_{i+1}\mapsto x_{i+1}y_{i+2}^{-1}\\
+x_{i+2}\mapsto x_iy_{i+1}^{-1}\\
+y_{i} \mapsto y_{i+1}\\
+y_{i+1} \mapsto y_{i+2}\\
+y_{i+2} \mapsto y_{i}\\
+\end{cases} &\qquad
+s_ir_{i+1}r_i &:
+\begin{cases}
+x_i\mapsto x_{i+2}y_{i+2}\\
+x_{i+1}\mapsto x_{i+1}y_{i+2}^{-1}\\
+x_{i+2}\mapsto x_iy_{i+1}^{-1}\\
+y_{i}\mapsto y_{i+1}\\
+y_{i+1}\mapsto y_{i+2}\\
+y_{i+2}\mapsto y_{i}\\
 \end{cases} 
-$$
+\end{align*}
 
-Finally $r_is_{i+1}s_i(x_{i+2})=x_iy_{i+1}^{-1}y_{i+2}^{-1}$ but $s_{i+1}s_ir_{i+1}(x_{i+2})=x_iy_{i+2}^{-1}y_{i+1}^{-1}$. Also $r_{i+1}s_is_{i+1}(x_i)=x_{i+2}y_{i+2}y_{i+1}$ but $s_is_{i+1}r_i(x_i)=x_{i+2}y_{i+2}y_i$. Thus $\theta_n$ do not preserve the forbidden relations.    
+Finally, $r_is_{i+1}s_i(x_{i+2})=x_iy_{i+1}^{-1}y_{i+2}^{-1}$ but $s_{i+1}s_ir_{i+1}(x_{i+2})=x_iy_{i+2}^{-1}y_{i+1}^{-1}$. Also $r_{i+1}s_is_{i+1}(x_i)=x_{i+2}y_{i+2}y_{i+1}$ but $s_is_{i+1}r_i(x_i)=x_{i+2}y_{i+2}y_i$. Thus $\theta_n$ do not preserve the forbidden relations.    
 \end{proof}
 
 Remark that it solves the problem of V.~Bardakov from \cite{problems}
@@ -333,11 +334,83 @@ Note that the group $FVB_n$ is linear (it is know fact).
 Is it true that the linear representation has the same kernel as representation by automorphisms?
 
 \section{Representations of gauss virtual braids}
-Let us go down and adopt these representations to the Gauss virtual knot theory.
 
-Here we can easily find the kernel
+We recall that the group of Gauss virtual braids on $n$ strands is the group $GVB_n$ with generators  $\sigma _1,\sigma _2,\dots,\sigma _{n-1}\rho_1,\rho _2,\dots,\rho _{n-1}$ and defining relations (\ref{def}) with new relations 
 
-Reduce the degree of representation.
+\begin{align*}
+\sigma_i\rho_i=\rho_i\sigma_i && i = 1, 2, \dots,n-1.
+\end{align*}
+
+We might extend representation $\theta_n$, introduced previously, to $GVB_n$ in the followin way. Let $G=\langle x_1, x_2, \ldots, x_n, y_1, y_2, \ldots, y_n, z ~|~ z^2\rangle$, then the mapping $\theta_n^*:GVB_n\to {\rm Aut}(G)$, defined by formulas below, is a representation which do not preserve the forbidden relations. 
+
+\begin{equation}\label{defGV}
+\theta_n^*(\sigma_i):
+\begin{cases}
+x_i \mapsto x_{i+1}z\\
+x_{i+1} \mapsto x_iz\\
+\end{cases}\quad
+\theta_n^*(\rho_i):
+\begin{cases}
+x_i \mapsto x_{i+1}\\
+x_{i+1} \mapsto x_i\\
+y_i \mapsto y_{i+1}\\
+y_{i+1} \mapsto y_i\\
+\end{cases}
+\end{equation}
+
+For description of representation's kernel introduce following
+
+\begin{definition}
+Let $c$ be an element of $FVB_n$. Reduction of $\sigma$ in $b$ is element $R_{\sigma}(c)$ of $FVB_n$ derived from $c$ by deleting all $\sigma_i$ in $b$.
+\end{definition}
+
+For example, $R_{\sigma}(\rho_1\sigma_3\sigma_7\rho_5)=\rho_1\rho_5$. 
+
+\begin{theorem}
+For kernel and image of representation $\theta_n^*$ following propositions are hold.
+\begin{enumerate}
+\item ${\rm Im}(\theta_n^*)=S_n\times S_n.$
+\item $b\in {\rm Ker}(\theta_n^*) \Leftrightarrow b\in GVP_n$ and $R_{\sigma}(b)\in VP_n.$
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+\item Note that $GVB_n$ be generated by $\sigma_1, \ldots \sigma_{n-1}, \eta_1, \ldots \eta_{n-1}$ where $\eta_i=\sigma_i\rho_i$, since $\rho_i=e\rho_i=\sigma_i^2\rho_i=\sigma_i\eta_i$. For images of new generators we obtain:
+
+\begin{equation}\label{newdef}
+\theta_n^*(\sigma_i):
+\begin{cases}
+x_i \mapsto x_{i+1}z\\
+x_{i+1} \mapsto x_iz\\
+\end{cases}\quad
+\theta_n^*(\eta_i):
+\begin{cases}
+x_i \mapsto x_{i}z\\
+x_{i+1} \mapsto x_{i+1}z\\
+y_i \mapsto y_{i+1}\\
+y_{i+1} \mapsto y_i\\
+\end{cases}
+\end{equation}
+
+Every automorphism $A$ lying in $Im(\theta_n^*)$ has the following form:
+
+\begin{align*}
+A:
+\begin{cases}
+x_i\mapsto x_{s(i)}z^{\varepsilon_i}\\
+y_j\mapsto y_{t(j)}
+\end{cases}
+\end{align*}
+
+Here $s,t\in S_n$, $\varepsilon_i \in \{0,1\}$ and $s,t$ define $\varepsilon_i$. 
+
+\item Let $b\in {\rm Ker}(\theta_n^*)$, then $b$ actes on $x_i$ identically for all $i$, this means that $b\in GVP_n$. Also $b$ actes on $y_i$ identically for all $i$, then $R_{\sigma}(b)\in VP_n$, since all $\sigma_i$ not actes on every generator $y_j$.
+
+Now, let $b\in GVP_n$ and $R_{\sigma}(b)\in VP_n$. Note that $b$ actes on every $y_i$ identically, this follows from the second condition. Since $b$ is pure braid, we obtain that $x_i\xrightarrow{b}x_iz^{\varepsilon_i}$ where $\varepsilon_i\in \{0, 1\}$. Not hard to see that total exponent sum of $\sigma_i$ in $b$ is even number. Also total exponent sum of $\eta_i$ in $b$ is even number. Then $\varepsilon_i=0$ for all $i$. This means that $b\in {\rm Ker}(\theta_n^*)$.
+\end{enumerate}
+\end{proof}
+
 \section{Knot theory}
 Can we apply it to knot theory?
 
