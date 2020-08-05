@@ -81,17 +81,107 @@ The group of flat virtual braids on $n$ strands is the group $FVB_n$ with genera
 
 Our aim is construct a representation $FVB_n \rightarrow {\rm Aut} (G)$, where $G$ is some "good" group, for example, a free group.
 \section{Preliminaries}
-Definition of $FVB_n$ (or all braid groups smoothly going to flat virtual braids)
 
-Explanation what is $FVP_n$
+We need to know a few definitions and statesments that we will use in our work.
 
-Explanation that $FVB_n=FVP_n\rtimes S_n$
+First of all let's notice that all braid groups smoothly going to flat virtual braids what was proven by V.~Bardakov, P.~Bellingeri, C.~Damiani in \cite{BarBelDom}. 
 
-Description of $FVP_3$ from \cite{BarBelDom}
+Let's make sure, the flat virtual braids $FVB_n$ is a quotient of $VB_n$ adding relations 
+$$ \sigma_i^2=1, \quad i = 1, 2, \dots,n-1 $$
 
-Known representations of $FVB_n$ and why they are bad for us.
+It is evident that $FVB_n$ is a quotient of the free product $S_n*S_n$
 
-Group $FVB_n$ is linear \cite{BarBelDom}
+Then we can consider the natural projection map $f:VB_n \rightarrow FVB_n$, and set $f(\rho_i):= \rho_i$ and $f(\sigma_i):= s_i$ for $i = 1, 2, \dots, n-1$. 
+
+In addition to relations coming from the two copies of $S_n$, in $FVB_n$ we have mixed relations 
+\begin{align*}
+s_i\rho_j = \rho_js_i, &\quad |i-j| \ge 2,\\
+\rho_i\rho_{i+1}s_i = s_{i+1}\rho_i\rho_{i+1}, &\quad i = 1, 2, \dots, n-2.
+\end{align*}
+
+So now we can define \textit{flat pure virtual braid group} $FVP_n$ as the kernel of the map  $FVB_n \to S_n$ defined by $s_i, \rho_i \mapsto (i, i+1)$ for $i = 1, 2, \dots, n-1$. With respect to the map $f:VB_n \to FVB_n$, we have that $f(VP_n) = FVP_n$. 
+
+The definition follows that the group $FVB_n$ is isomorphic to $FVP_n\rtimes S_n$.
+
+\vspace{6pt}Second of all we have the description of $FVP_n$ in case $n = 3$ proposed in \cite{BarBelDom}.
+$$FVP_3 = \langle a, b, c ~|| ~ [a,c] = 1 \rangle  = \langle a, c~||~[a,c] = 1 \rangle * \langle b \rangle$$
+
+Where generators defined by the formulas:
+$$ 
+\begin{cases}
+a = \rho_2\sigma_2\rho_2\rho_1\sigma_1\rho_2, \\
+b = \rho_2\sigma_2,\\
+c = \rho_2\sigma_2\sigma_1\rho_2.\\
+\end{cases}
+$$
+
+This result will be useful when we search the kernel of representation.
+
+\vspace{6pt}In the course of our work we found many representations of $FVB_n$, but lots of them were useless. Why we will understand by example:
+$$\Phi : FVB_n \to Aut(F_n+1)$$
+$$
+\Phi(\sigma_i):
+\begin{cases}
+x_i \mapsto x_{i+1},\\
+x_{i+1} \mapsto x_i,\\
+x_j \mapsto x_j \quad for~j \not= i, i+1 \\
+y \mapsto y \\
+\end{cases},\quad
+\Phi(\rho_i):
+\begin{cases}
+x_i \mapsto yx_{i+1}y^{-1},\\
+x_{i+1} \mapsto t^{-1}x_iy,\\
+x_j \mapsto x_j \quad for~j \not= i, i+1 \\
+y \mapsto y \\
+\end{cases}
+$$
+
+It is easy to check that all defining relations are correct.
+
+For example let's check mixed relation $\rho_{i+1}\rho_i\sigma_{i+1} = \sigma_i\rho_{i+1}\rho_i$
+
+\begin{align*}
+\Phi(\rho_{i+1}\rho_i\sigma_{i+1}):&
+\begin{cases}
+x_i \mapsto x_i \mapsto yx_{i+1}y^{-1} \mapsto yx_{i+2}y^{-1},\\
+x_{i+1} \mapsto yx_{i+2}y^{-1} \mapsto yx_{i+2}y^{-1} \mapsto yx_{i+1}y^{-1},\\
+x_{i+2} \mapsto y^{-1}x_{i+1}y \mapsto y^{-2}x_iy^2 \mapsto y^{-2}x_iy^2,\\
+y \mapsto y\mapsto y \mapsto y, \\
+\end{cases} \\
+\Phi(\sigma_i\rho_{i+1}\rho_i):&
+\begin{cases}
+x_i \mapsto x_{i+1} \mapsto yx_{i+2}y^{-1} \mapsto yx_{i+2}y^{-1},\\
+x_{i+1} \mapsto x_i \mapsto x_i \mapsto yx_{i+1}y^{-1},\\
+x_{i+2} \mapsto x_{i+2} \mapsto y^{-1}x_{i+1}y^ \mapsto y^{-2}x_iy^2,\\
+y \mapsto y\mapsto y \mapsto y, \\
+\end{cases}
+\end{align*}
+
+Others by anology.
+
+
+It means that $\Phi$ actually are representation for $FVB_n$. But forbidden relation $\rho_i\sigma_{i+1}\sigma_i = \sigma_{i+1}\sigma_i\rho_{i+1}$ is correct too.
+\begin{align*}
+\Phi(\rho_{i+1}\rho_i\sigma_{i+1}):&
+\begin{cases}
+x_i \mapsto yx_{i+1}y^{-1} \mapsto yx_{i+2}y^{-1} \mapsto yx_{i+2}y^{-1},\\
+x_{i+1} \mapsto yx_iy^{-1} \mapsto yx_iy^{-1} \mapsto y^{-1}x_{i+1}y,\\
+x_{i+2} \mapsto x_{i+2} \mapsto x_{i+2} \mapsto x_i,\\
+y \mapsto y\mapsto y \mapsto y, \\
+\end{cases} \\
+\Phi(\sigma_i\rho_{i+1}\rho_i):&
+\begin{cases}
+x_i \mapsto x_i \mapsto x_{i+1}  \mapsto yx_{i+2}y^{-1},\\
+x_{i+1} \mapsto x_{i+2} \mapsto x_{i+2} \mapsto y^{-1}x_{i+1}y,\\
+x_{i+2} \mapsto x_{i+1} \mapsto x_i\mapsto x_i,\\
+y \mapsto y\mapsto y \mapsto y, \\
+\end{cases}
+\end{align*}
+
+ what leads to problems with corresponding witn knot theory. 
+
+\vspace{6pt}And the last preliminary statesment wich were proved in \cite{BarBelDom} is that the group $FVB_n$ is linear. The proof based on facts that $FVB_n = FH_n \rtimes S_n$ and that all finitely generated Coxeter groups are linear and that finite extensions of linear groups are also linear. That realy useful fact makes us to find a linear representation of that group, what we have done.
+
 \section{New representation}
 
 Consider a free group $F_{2n}=\langle x_1, x_2,\ldots , x_n, y_1, y_2, \ldots , y_n \rangle$. M.~Ivanov and I.~Emelianenkov suggested the mapping $\theta_n:FVB_n \rightarrow {\rm Aut}(F_{2n})$ which acts on the generators as follows:
