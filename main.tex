@@ -419,6 +419,27 @@ $$
 \section{Linear representation}
 Introduce the linear representation we got from our representation by automorphisms.
 
+Let build a matrix for our representation on $n=3$ strands. Get basis $V = span$ { $e_1 \dots e_n, q_1 \dots q_n$ }. Then for $\sigma_i$ 
+$$
+A_i = 
+\begin{cases}
+	e_i \rightarrow e_{i+1}q_{i+1}\\
+	e_{i+1}\rightarrow  e_i-q_{i+1}\\
+	q_i\rightarrow  q_i\\
+	q_{i+1}\rightarrow  q_{i+1}\\
+\end{cases}
+$$
+For $\rho_i$ 
+$$
+B_i = 
+\begin{cases}
+	e_i\rightarrow e_{i+1}\\
+	e_{i+1}\rightarrow e_i\\
+	q_i\rightarrow q_{i+1}\\
+	q_{i+1}\rightarrow q_i\\
+\end{cases}
+$$
+
 There are linear representation for $\sigma_i$ and $\sigma_{i+1}$ :
 \begin{equation*}
 A_1 = 
