@@ -61,7 +61,7 @@ In mathematical term, a braid group $B_n$ is a group with generators $\sigma _1,
 \end{align*}
 
 
-Braids are objects closely related to knots. If $\alpha$ is a braid on $n$ strands, then to connect the first upper point to the first bottom point, the second upper braid point to the second bottom braid point, and so on we get some link $\check  \alpha$ (image).
+Braids are objects closely related to knots. If $\alpha$ is a braid on $n$ strands, then to connect the first upper point to the first bottom point, the second upper braid point to the second bottom braid point, and so on we get some link $\check  \alpha$.
 
 For every link $K$ exists some braid $\alpha$, where link $K$ and $\check  \alpha$ are equivalent.\\
 
@@ -421,7 +421,7 @@ $$
 \section{Linear representation}
 Introduce the linear representation we got from our representation by automorphisms.
 
-Let build a matrix for our representation on $n=3$ strands. Get basis $V = span$ { $e_1 \dots e_n, q_1 \dots q_n$ }. Then for $\sigma_i$ 
+Let build a matrix for our representation on $n=3$ strands. Get basis $V = $ { $e_1 q_1,e_2 q_2  \dots e_n q_n$ }. Then for $\sigma_i$ 
 $$
 A_i = 
 \begin{cases}
@@ -446,34 +446,34 @@ There are linear representation for $\sigma_i$ and $\sigma_{i+1}$ :
 \begin{equation*}
 A_1 = 
 \begin{pmatrix}
-  0& 1& 0& 0& 0& 0\\
-  1& 0& 0& 0& 0& 0\\
-  0& 0& 1& 0& 0& 0\\
-  0& 0& 0& 1& 0& 0\\
-  1& -1& 0& 0& 1& 0\\
+  0& 0& 1& 0& 0& 0 \\
+  0& 1& 0& 0& 0& 0 \\
+  1& 0& 0& 0& 0& 0 \\
+  1& 0& -1&1& 0& 0 \\
+  0& 0& 0& 0& 1& 0 \\
   0& 0& 0& 0& 0& 1\\
 \end{pmatrix}
 \end{equation*}
 \begin{equation*}
 A_2 = 
 \begin{pmatrix}
- 1& 0& 0& 0& 0& 0\\
-  0& 0& 1& 0& 0& 0\\
+  1& 0& 0& 0& 0& 0 \\
   0& 1& 0& 0& 0& 0\\
-  0& 0& 0& 1& 0& 0\\
   0& 0& 0& 0& 1& 0\\
-  0& 1& -1& 0& 0& 1\\
+  0& 0& 0& 1& 0& 0\\
+  0& 0& 1& 0& 0& 0\\
+  0& 0& 1& 0& -1& 1 \\
 \end{pmatrix}
 \end{equation*}
 And there are linear representation for $\rho_i$ and $\rho_{i+1}$ :
 \begin{equation*}
 B_1 = 
 \begin{pmatrix}
-0& 1& 0& 0& 0& 0\\
-  1& 0& 0& 0& 0& 0\\
-  0& 0& 1& 0& 0& 0\\
-  0& 0& 0& 0& 1& 0\\
+   0& 0& 1& 0& 0& 0\\
   0& 0& 0& 1& 0& 0\\
+  1& 0& 0& 0& 0& 0\\
+  0& 1& 0& 0& 0& 0\\
+  0& 0& 0& 0& 1& 0\\
   0& 0& 0& 0& 0& 1\\
 \end{pmatrix}
 \end{equation*}
@@ -481,11 +481,11 @@ B_1 =
 B_2 = 
 \begin{pmatrix}
   1& 0& 0& 0& 0& 0\\
-  0& 0& 1& 0& 0& 0\\
   0& 1& 0& 0& 0& 0\\
-  0& 0& 0& 1& 0& 0\\
-  0& 0& 0& 0& 0& 1\\
   0& 0& 0& 0& 1& 0\\
+  0& 0& 0& 0& 0& 1\\
+  0& 0& 1& 0& 0& 0\\
+  0& 0& 0& 1& 0& 0\\
 \end{pmatrix}
 \end{equation*}
 Note that the group $FVB_n$ is linear (it is know fact).
