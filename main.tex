@@ -13,6 +13,7 @@
 \flushbottom % выравнивание высоты страниц
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
+\newtheore{lemma}{Lemma}
 
 \title{Representations of flat virtual braids which do not preserve the forbidden relations}
 \author{B.~Chuzhinov \and I.~Emelianenkov \and  M.~Ivanov \and E.~Markhinina  \and S.~Panov \and  T.~Plevako \and N.~Singh \and S.~Vasyutkin \and V.~Yakhin \and V.~Bardakov \and A.~Vesnin \and T.~Nasybullov} 
@@ -648,6 +649,48 @@ y_i \mapsto y_{i+1}\\
 y_{i+1} \mapsto y_i\\
 \end{cases}
 \end{equation}
+
+Lets define following elements
+\begin{align*}
+&\lambda_{i, i+1} = \rho_i\sigma_i^{-1}, \quad \lambda_{i+1,i}=\rho_i\lambda_{i,i+1}\rho_i = \sigma_i^{-1}\rho_i, \quad &&for ~ i = 1,2,\dots,n-1,\\
+&\lambda_{i,j} = \rho_{j-1}\rho_{j-2}\dots\rho_{i+1}\lambda_{i,i+1}\rho_{i+1}\dots\rho_{j-2}\rho_{j-1},\\
+&\lambda_{j,i} = \rho_{j-1}\rho_{j-2}\dots\rho_{i+1}\lambda_{i,i+1}\rho_{i+1}\dots\rho_{j-2}\rho_{j-1}, \quad &&for ~ 1 \le i < j-1 \le n-1.
+\end{align*}
+
+And formulate a theorem which was rpoved by V.~Bardakov in 
+The virtual and universal braids (2004).
+
+\begin{theorem}
+	The group $VP_n$ admits a presentation with the generators $\lambda_{k,l}, 1 \le k \not= l \le n$, and the defining relations:
+	\begin{align*}
+	\lambda_{i,j}\lambda_{k,l} &= \lambda_{k,l}\lambda_{i,j}; \\
+	\lambda_{k,i}\lambda_{k,j}\lambda_{i,j} &= \lambda_{i,j}\lambda_{k,j}\lambda_{k,i}, \\
+	\end{align*}
+	where distinct letters stand for distinct indices.
+\end{theorem}
+
+Let us denote by $H_n$ the normal closure of $B_n$ in $VB_n$.
+
+Define the followin elements: 
+\begin{align*}
+x_{i,i+1}&=\sigma_i, ~~& x_{i,j}&=\rho_{j-1}\ldots \rho_{i+1}\sigma_i\rho_{i+1}\ldots \rho_{j-1} ~{\rm for}~ 1\le i<j-1\le n-1,\\
+x_{i+1,i}&=\rho_i\sigma_i\rho_i, ~~& x_{j,i}&=\rho_{j-1}\ldots \rho_{i+1}\rho_i\sigma_i\rho_i\rho_{i+1}\ldots \rho_{j-1} ~{\rm for}~ 1\le i<j-1\le n-1.\\
+\end{align*}
+
+
+\begin{lemma}
+	Let $\rho \in S_n$. Then element $\rho x_{i,j}\rho^{-1}$ is equal to $x_{\rho(i),\rho(j)}$ for $1\le i\ne j\le n-1$.
+\end{lemma}
+
+
+\begin{lemma}
+	The group $H_n$ admits a presentation with the generators $x_{k,l}$, $1\le k\ne l\le n$, and the defining relations:
+	\begin{align*}
+	x_{i,j}x_{k,l}&=x_{k,l}x_{i,j},\\
+	x_{i,k}x_{k,j}x_{i,k}&=x_{k,j}x_{i,k}x_{k,j},\\
+	\end{align*}
+	where distinct letters stand for disting indices.
+\end{lemma}
 
 Most likely (up to my opinion) the map in the second line on the left is the representation. And this representation is better than the previous one (need to check).
 
