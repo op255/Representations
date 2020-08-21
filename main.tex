@@ -650,6 +650,44 @@ y_{i+1} \mapsto y_i\\
 \end{cases}
 \end{equation}
 
+\begin{theorem}
+Representations (4)-(7) and representation $\theta_n$ are equivalent.
+\end{theorem}
+\begin{proof}
+Let's show that representations (4)-(7) are equivalent to representation $\theta_n$. 
+
+Representation (4). Let $\beta \in$ Ker $\theta^*$ that's mean that $\theta^*(\beta) =$ id for any fixed $m$ $\Rightarrow$ $\beta \in$ Ker $\theta^*$ for $m=1$ $\Rightarrow$ $\beta \in$ Ker $\theta$.
+
+Let $\beta \in$ Ker $\theta$. $\theta$ and $\theta^*$ have the same action on $y_i$ for all i. If $m=1$ $\theta = \theta^*$.
+Let $w_{sk} = y_s y_{s+1} \dots y_r$ where $s \leqslant r$, then $\theta(\beta)(x_i) = x_i w_{s_1 k_1}w_{s_1 k_1}^{-1} \dots w_{s_p k_p}w_{s_p k_p}^{-1}$ where $s_1 = s_p = i$.
+Let $\tilde w_{s k} = y_s^m y_{s+1}^m \dots y_r^m$ where $s \leqslant r$, then $\theta^*(\beta)(x_i) = x_i \tilde w_{s_1 k_1} \tilde w_{s_1 k_1}^{-1} \dots \tilde w_{s_p k_p} \tilde w_{s_p k_p}^{-1} = x_i$.
+
+Representation (5). Let's define map $\phi$:
+\begin{equation}\label{defGV}
+\theta_n^*(\sigma_i):
+\begin{cases}
+x_i \mapsto x_{i+1}y_{i+1}^m\\
+x_{i+1} \mapsto x_iy_{i+1}^{-m}\\
+\end{cases}\quad
+\theta_n^*(\rho_i):
+\begin{cases}
+x_i \mapsto x_{i+1}\\
+x_{i+1} \mapsto x_i\\
+y_i \mapsto y_{i+1}\\
+y_{i+1} \mapsto y_i\\
+\end{cases}
+\end{equation}
+That's easy to see that $\phi \theta^* \phi = \theta$. That's mean that $\theta^*$ and $\theta$ are equivalent.
+
+Representation (6).  Let $\beta \in$ Ker $\theta^*$ that's mean that $\theta^*(\beta) =$ id for any fixed $z$ $\Rightarrow$ $\beta \in$ Ker $\theta^*$ for $z=1$ $\Rightarrow$ $\beta \in$ Ker $\theta$.
+
+Let $\beta \in$ Ker $\theta$. $\theta$ and $\theta^*$ have the same action on $y_i$ for all i. 
+Let's call $\sigma-up$ ($\sigma \uparrow$) map that change $x_i$ to $x_{x+1}$ and $\sigma-down$ ($\sigma \downarrow$) map that change $x_i$ to $x_{x-1}$. Similarly, we define $\rho-up$ ($\rho \uparrow$) and $\rho-down$ ($\rho \downarrow$). $\sigma_i$ don't move $y_j$ for all i, j. Notice that the values of the indices of $x_i$ and $y_i$ increase and decrease simultaneously. $\theta^*(\beta)(y_i) = y_i$ mean that $\sigma \uparrow = \sigma \downarrow = m$. $y_iz = zy_i$ for all i $\Rightarrow$ $\theta^*(\beta)(x_i)= x_i z^m z^{-m} = x_i$ for all i. 
+
+Representation (7). Everything goes just as in the representation (6), besides $\theta^*(\beta)(x_i)= z^{-m}z^m x_i z^{-m} z^m = x_i$.
+
+\end{proof}
+
 Lets define following elements
 \begin{align*}
 &\lambda_{i, i+1} = \rho_i\sigma_i^{-1}, \quad \lambda_{i+1,i}=\rho_i\lambda_{i,i+1}\rho_i = \sigma_i^{-1}\rho_i, \quad &&for ~ i = 1,2,\dots,n-1,\\
